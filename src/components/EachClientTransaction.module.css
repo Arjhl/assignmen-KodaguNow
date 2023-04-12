@@ -1,0 +1,75 @@
+.head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.head p {
+  width: 10vw;
+  font-size: 1em;
+  color: black;
+}
+.client {
+  width: 20vw !important;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.client img {
+  height: 5vh;
+}
+.edit {
+  /* width: 4vw !important; */
+  padding: 10px 20px;
+  height: 4vh;
+  font-size: 0.9em;
+  /* display: flex; */
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  /* justify-items: center; */
+  align-items: center;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.edit:hover {
+  background: #2a316a;
+  color: #fff;
+}
+
+.edit:hover > img {
+  height: 1.5vh;
+}
+
+.edit img {
+  height: 1.1vh;
+  padding: 0 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .head p {
+    font-size: 0.5em;
+    width: 15vw;
+    text-align: center;
+  }
+  .client img {
+    height: 2vh;
+  }
+  .client {
+    width: 25vw !important;
+    padding-right: 10px;
+  }
+  .edit {
+    width: 10vw !important;
+    font-size: 0.5em;
+    padding: 5px;
+  }
+  .edit img {
+    display: none;
+  }
+}

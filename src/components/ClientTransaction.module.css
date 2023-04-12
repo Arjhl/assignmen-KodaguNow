@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.head p {
+  width: 10vw;
+  font-size: 1em;
+  color: grey;
+}
+.client {
+  width: 20vw !important;
+}
+.edit {
+  width: 4vw !important;
+}
+
+@media (max-width: 600px) {
+  .head p {
+    font-size: 0.7em;
+    width: 15vw;
+  }
+  .client {
+    width: 25vw !important;
+  }
+  .edit {
+    width: 10vw !important;
+  }
+}

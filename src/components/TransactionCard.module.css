@@ -1,0 +1,55 @@
+.deposit {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 5vw;
+  height: 6vh;
+  color: #fff;
+  background: #48c446;
+  border-radius: 5px;
+}
+.pending {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 6vw;
+  height: 6vh;
+
+  color: #fff;
+
+  background: #bdbdbd;
+  border-radius: 5px;
+}
+.overdue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 8vw;
+  height: 6vh;
+  color: #fff;
+
+  background: #ec615b;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 0.7em;
+  }
+  .deposit {
+    width: 16vw;
+    justify-content: center;
+  }
+  .pending {
+    width: 18vw;
+    justify-content: center;
+  }
+  .overdue {
+    width: 20vw;
+    justify-content: center;
+  }
+}

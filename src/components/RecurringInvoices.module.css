@@ -1,0 +1,156 @@
+.container {
+  margin-right: 10vw;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.head h1 {
+  font-weight: 900;
+  font-size: 2.7em;
+}
+.head button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 12vw;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.head button:hover {
+  color: #fff;
+  background: #2a316a;
+}
+.head button img {
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.head button:hover > img {
+  transform: scale(1.5);
+  padding: 0 15px;
+}
+.card_parent {
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  margin: 2vh 0;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+.card {
+  height: 16vh;
+  width: 24vw;
+  background: #f9f9fb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card_head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #979797;
+}
+.card_num {
+  font-weight: 700;
+  font-size: 1.5em;
+
+  color: #000000;
+}
+.recur_list_head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000000;
+}
+.search {
+  display: flex;
+  margin: 1vh 0;
+}
+.search input {
+  padding: 12px 16px;
+  border: none;
+  width: 12vw;
+
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.search input::placeholder {
+  color: #979797;
+}
+.search button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 31px;
+  height: 5vh;
+  margin: 0 1vw;
+  color: #fff;
+  width: 8vw;
+  background: #000000;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.search button:hover {
+  color: #fff;
+  background: #2a316a;
+}
+.search button img {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.search button:hover > img {
+  transform: scale(1.5);
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+  .head {
+    align-items: center;
+  }
+  .head h1 {
+    font-size: 1.6em;
+  }
+  .head button {
+    font-size: 1em;
+  }
+  .card {
+    width: fit-content;
+    height: 15vh;
+    padding: 10px;
+  }
+  .card_head {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .card_num {
+    font-size: 0.9em;
+  }
+  .recur_list_head {
+    font-size: 1.5em;
+  }
+  .search {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search input {
+    width: 50vw;
+  }
+  .search button {
+    width: 40vw;
+  }
+}
